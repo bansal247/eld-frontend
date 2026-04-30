@@ -7,7 +7,7 @@ const baseURL = import.meta.env.VITE_API_BASE_URL || ''
 const client = axios.create({
   baseURL,
   headers: { 'Content-Type': 'application/json' },
-  timeout: 30000,
+  timeout: 120000,
 })
 
 export async function geocode(query) {
